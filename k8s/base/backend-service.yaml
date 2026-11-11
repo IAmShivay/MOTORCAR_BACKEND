@@ -1,0 +1,11 @@
+apiVersions: v1
+kind: Service
+metadata: backend
+name: backend-service
+spec:
+  selector:
+    app: backend
+ports:
+  - port: 80
+    tragetPort: 3000
+type: clusterIp
